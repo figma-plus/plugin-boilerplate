@@ -5,18 +5,20 @@
   "repository": "https://cdes@github.com/cdes/figma-plugin-boilerplate.git",
   "author": "Ahmad Al Haddad <haddad@ah.sa>",
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.js",
   "dependencies": {
     "@babel/runtime": "^7.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
     "@babel/plugin-transform-arrow-functions": "^7.2.0",
     "@babel/plugin-transform-classes": "^7.2.2",
     "@babel/plugin-transform-modules-commonjs": "^7.2.0",
     "@babel/plugin-transform-regenerator": "^7.0.0",
     "@babel/plugin-transform-runtime": "^7.2.0",
     "@babel/plugin-transform-shorthand-properties": "^7.2.0",
+    "@babel/plugin-transform-spread": "^7.2.2",
     "@babel/plugin-transform-template-literals": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
     "babel-core": "^7.0.0-bridge.0",

@@ -7,6 +7,8 @@ module.exports = function (api) {
     "@babel/plugin-transform-shorthand-properties",
     "@babel/plugin-transform-template-literals",
     "@babel/plugin-transform-classes",
+    "@babel/plugin-transform-spread",
+    "@babel/plugin-proposal-object-rest-spread"
   ];
 
   api.cache(true);

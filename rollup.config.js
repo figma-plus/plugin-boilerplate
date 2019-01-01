@@ -9,7 +9,7 @@ const production = !process.env.ROLLUP_WATCH;
 export default [
 	// browser-friendly UMD build
 	{
-		input: 'src/main.js',
+		input: 'src/index.js',
 		output: {
 			name: 'figma-plugin-boilterplate',
 			file: 'dist/figma-plugin-boilerplate.js',
