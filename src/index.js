@@ -1,5 +1,9 @@
 export default class ExamplePlugin {
   constructor() {
+    const { App } = window;
+
+    this.fileName = App.getCurrentFileName();
+
     this.options = [
       "Alert File Name",
       this.main.bind(this),
@@ -7,16 +11,13 @@ export default class ExamplePlugin {
       { shift: true, option: true, key: "t" }
     ];
 
-    const { figmaPlugin } = window;
-    figmaPlugin.createPluginsMenuItem(...this.options);
-
-    window.examplePlugin = this;
+    window.figmaPlugin.createPluginsMenuItem(...this.options);
   }
 
   main() {
-    const { App, alert } = window;
-    const fileName = App.getCurrentFileName();
-
-    alert(fileName);
+    const { alert } = window;
+    alert(this.fileName);
   }
 }
+
+window.examplePlugin = new ExamplePlugin();

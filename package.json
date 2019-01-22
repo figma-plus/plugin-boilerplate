@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "An example plugin for Figma that utlize Figma Plugin Manager API.",
   "repository": "https://cdes@github.com/cdes/figma-plugin-boilerplate.git",
+  "manifestUrl": "https://cdes@github.io/figma-plugin-boilerplate/manifest.json",
   "author": "Ahmad Al Haddad <haddad@ah.sa>",
   "license": "MIT",
   "main": "src/index.js",
@@ -23,20 +24,26 @@
     "@babel/preset-env": "^7.2.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.2",
     "jest": "^23.6.0",
     "prettier": "^1.15.3",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^1.0.0",
     "rollup-plugin-babel": "^4.2.0",
     "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-json": "^3.1.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-run": "^1.1.0",
-    "rollup-plugin-uglify": "^6.0.0"
+    "rollup-plugin-serve": "^1.0.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "sha.js": "^2.4.11"
   },
   "scripts": {
-    "build": "rollup -cm",
+    "build": "rollup -c",
     "prebuild": "prettier --write src/**",
-    "dev": "rollup -cwm",
+    "serve": "rollup -cwm",
+    "start": "rollup -cwm  --environment RUN",
     "test": "jest --config jest.config.js"
   },
   "files": [

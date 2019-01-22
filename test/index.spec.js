@@ -1,9 +1,5 @@
 import ExamplePlugin from '../src';
 
-window.figmaPlugin = {
-  createPluginsMenuItem: () => {},
-}
-
 const instance = new ExamplePlugin();
 
 test('it has a name', () => {
