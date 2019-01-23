@@ -27,6 +27,7 @@
     "boxen": "^2.1.0",
     "chalk": "^2.4.2",
     "jest": "^23.6.0",
+    "nodejs-fs-utils": "^1.1.2",
     "prettier": "^1.15.3",
     "regenerator-runtime": "^0.13.1",
     "rollup": "^1.0.0",
