@@ -4,10 +4,14 @@
 
 <hr/>
 
+<p align="center"> 
+<img align="center" src="https://user-images.githubusercontent.com/1207863/52892896-07677c00-31a8-11e9-9ffb-f8d2849014d6.gif" />
+ </p>
+
 <h3> Features </h3>
 
 <ul>
-  <li>Write your plugin in ES6</li>
+  <li>Modern Javascript (ES6)</li>
   <li>Tests using Jest</li>
   <li>Transpiling using Babel and bundle using Rollup</li>
   <li>Code formatting with Prettier</li>
@@ -26,7 +30,7 @@ export default class ExamplePlugin {
     ];
 
     const { figmaPlugin } = window;
-    figmaPlugin.createPluginsMenuItem(...this.options);
+    figmaPlus.createPluginsMenuItem(...this.options);
 
     window.examplePlugin = this;
   }
@@ -45,7 +49,7 @@ export default class ExamplePlugin {
 
 
 ```shell
-$ git clone https://github.com/cdes/figma-plugin-boilerplate
+$ git clone https://github.com/figma-plus/plugin-boilerplate
 ```
 
 
@@ -55,7 +59,7 @@ $ yarn install
 
 
 ```shell
-$ yarn dev
+$ yarn serve
 ```
 
 
@@ -70,7 +74,7 @@ $ yarn build
 ```
 
 You'll see your bundle inside `dist` directory.
-Follow the <a href="http://figmaplugins.io/docs/publishing-a-plugin">docs instructions</a> to publish it.
+Follow the <a href="https://docs.figmaplus.com/#/developerGuide/publish">docs instructions</a> to publish it.
 
 <h3>License</h3>
 
