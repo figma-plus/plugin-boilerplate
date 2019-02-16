@@ -4,6 +4,6 @@ window.App = {
   getCurrentFileName: () => {}
 };
 
-window.figmaPlugin = {
+window.figmaPlus = {
   createPluginsMenuItem: () => {},
 }
