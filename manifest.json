@@ -3,7 +3,7 @@
 	"id": "figma-plugin-boilerplate",
 	"version": "0.0.1",
 	"author": "Ahmad Al Haddad",
-	"github": "https://github.com/cdes/figma-plugin-boilerplate",
+	"github": "https://github.com/figmaplus/plugin-boilerplate",
   "description": "An example plugin for Figma that utlize Figma Plugin Manager API.",
 	"instructions": "1. Browse Plugins menu 2. Click 'Alert File Name'",
 	"js": [
