@@ -11,7 +11,7 @@ export default class ExamplePlugin {
       { shift: true, option: true, key: "t" }
     ];
 
-    window.figmaPlugin.createPluginsMenuItem(...this.options);
+    window.figmaPlus.createPluginsMenuItem(...this.options);
   }
 
   main() {

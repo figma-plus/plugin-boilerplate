@@ -6,14 +6,7 @@
 	"github": "https://github.com/cdes/figma-plugin-boilerplate",
   "description": "An example plugin for Figma that utlize Figma Plugin Manager API.",
 	"instructions": "1. Browse Plugins menu 2. Click 'Alert File Name'",
-	"updates": [
-		{
-			"version": "0.0.1",
-			"date": "12/16/2018",
-			"notes": "First public release."
-		}
-	],
 	"js": [
-		"https://cdes.github.io/figma-plugin-boilterplate/dist/figma-plugin-boilerplate.js"
+		"dist/figma-plugin-boilerplate.js"
   ]
 }
