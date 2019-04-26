@@ -1,23 +1,33 @@
 export default class ExamplePlugin {
   constructor() {
-    const { App } = window;
+    const { figmaPlus } = window;
 
-    this.fileName = App.getCurrentFileName();
+    this.fileName = figmaPlus.fileName;
 
-    this.options = [
-      "Alert File Name",
-      this.main.bind(this),
-      null,
-      { shift: true, option: true, key: "t" }
-    ];
+    this.options = {
+      title: "Alert File Name",
+      action: this.main,
+      shortcut: {
+        mac: {
+          option: true,
+          shift: true,
+          key: "t"
+        },
+        windows: {
+          alt: true,
+          shift: true,
+          key: "t"
+        }
+      }
+    };
 
-    window.figmaPlus.createPluginsMenuItem(...this.options);
+    window.figmaPlus.addCommand(this.options);
   }
 
-  main() {
+  main = () => {
     const { alert } = window;
     alert(this.fileName);
-  }
+  };
 }
 
 window.examplePlugin = new ExamplePlugin();
