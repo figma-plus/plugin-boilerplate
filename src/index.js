@@ -5,7 +5,7 @@ export default class ExamplePlugin {
     this.fileName = figmaPlus.fileName;
 
     this.options = {
-      title: "Alert File Name",
+      label: "Alert File Name",
       action: this.main,
       shortcut: {
         mac: {
